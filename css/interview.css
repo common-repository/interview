@@ -1,0 +1,137 @@
+
+#interviewContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+#interviewRecorder, video.interviewPlayer {
+	background: #000;
+/*	width: 360px;
+	height: 240px;*/
+	max-width: 100%;
+}
+#videoWrapper {
+	width: 100%;
+}
+
+#interviewContainer #buttonsContainer {
+}
+div.buttonsPlayContainer button {
+	width: calc(50% - 20px);
+}
+#playInterviewContent video {
+	max-width: 640px;
+}
+#buttonsContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#buttonsContainer button {
+	width: 100%;
+}
+#interviewContainer #buttonsContainer button[disabled] {
+	opacity: 0.20;
+	pointer-events: none;
+}
+#questionsContainer {
+	display: flex;
+	width: 100%;
+	gap:2px;
+}
+.nextPrevious {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	background: #000;
+	border:none;
+	cursor: pointer;
+}
+.nextPrevious span {
+	font-weight: bold;
+	color:white;
+}
+#endInterviewBtn {
+	background: green;
+	color:white;
+}
+#questions {
+	background: red;
+	color:white;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px;
+	width: 100%;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#questionNumber {
+	font-weight: bold;
+	background: black;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	color: white;
+	padding: 5px;
+}
+#buttonsContainer button {
+	padding: 10px;
+	cursor: pointer;
+	margin: 5px;
+	border:none;
+}
+button#startButton {
+	color:black;
+}
+div.answerContainer {
+	margin: 10px;
+	width: 100%;
+}
+textarea#answer {
+	width: 100%;
+	min-height: 140px;
+}
+div.answer {
+	margin: 20px;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+.blink {
+	animation-duration: 1s;
+	animation-name: blinkAnimation;
+	animation-iteration-count: 4;
+}
+
+
+
+@keyframes blinkAnimation {
+	50% {
+		opacity: 0;
+	}
+}
+#counterDownRecorder2 {
+	font-size: 0.9em;
+	color: white;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	text-shadow: #000 1px 1px 1px;
+}
+#counterDownRecorder2::before {
+	content: '🔴';
+}

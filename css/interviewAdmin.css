@@ -1,0 +1,245 @@
+#interviewAddNewBtn {
+	padding: 6px;
+	border: 1px solid #000;
+	text-decoration: none;
+	color: white;
+	background: #000;
+}
+
+#interviewAddContainer,
+#interviewEditContainer,
+#interviewInviteContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+#interviewAddContainer input,
+#interviewEditContainer input,
+#interviewInviteContainer input,
+#interviewAddContainer textarea,
+#interviewEditContainer textarea,
+#interviewInviteContainer textarea {
+	width: 100%;
+	flex: 1;
+}
+
+#interviewAddContainer div,
+#interviewEditContainer div {
+	margin: 4px;
+}
+
+#inviteInterviewMessage {
+	height: 140px;
+}
+
+#TB_ajaxContent {
+	background: white;
+}
+
+#saveInterviewBtn {
+	cursor: pointer;
+	float: right;
+}
+
+a.interviewEditBtn {
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #666;
+	padding: 2px 10px 6px 7px;
+	margin: 4px;
+	border-radius: 2px;
+}
+
+
+div.questionItem {
+	display: flex;
+	padding: 5px;
+	margin: 3px;
+	width: 100%;
+	cursor: grabbing;
+	align-items: center;
+}
+
+div.questionItem div {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	align-items: center;
+}
+
+div.questionItem div div {
+	display: flex;
+	align-items: center;
+}
+
+input.questionAdmin {
+	width: 100%;
+}
+
+#interviewAdminContainer input[type="radio"] {
+	display: none;
+}
+
+#interviewAdminContainer input[type="radio"] + label {
+	display: inline-block
+}
+
+#interviewAdminContainer input[type="radio"] ~ .tab {
+	display: none
+}
+
+#interviewAdminContainer #tab1:checked ~ .tab.content1, #tab2:checked ~ .tab.content2 {
+	display: block;
+}
+
+#interviewAdminContainer input[type="radio"] + label {
+	border: 1px solid #999;
+	background: #EEE;
+	padding: 4px 12px;
+	border-radius: 4px 4px 0 0;
+	position: relative;
+	top: 1px;
+}
+
+#interviewAdminContainer input[type="radio"]:checked + label {
+	background: #FFF;
+	border-bottom: 1px solid transparent;
+}
+
+#interviewAdminContainer input[type="radio"] ~ .tab {
+	border-top: 1px solid #999;
+	padding: 12px;
+}
+
+#interviewTable {
+	width: 100%;
+}
+
+#interviewTable th {
+	background: black;
+	color: white;
+}
+
+#interviewTable tr {
+	border: 1px solid #CCC;
+	font-size: 0.9em;
+}
+
+#interviewTable td {
+	border-bottom: 1px solid #DDD;
+	padding: 10px;
+}
+
+#interviewDeleteAllrecords {
+	float: right;
+	margin: 20px;
+	background: red;
+	border: none;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#TB_window {
+	width: 100% !important;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-height: 100%;
+	max-width: 90%;
+	margin: 0 !important;
+	height: 90% !important;
+}
+
+#TB_ajaxContent {
+	height: 100% !important;
+	width: 100% !important;
+	/*height: auto !important;*/
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+a[data-interviewaction] {
+	border: 1px solid #000;
+	padding: 2px 5px;
+	color: black;
+	text-decoration: none;
+}
+
+div.interviewError {
+	background: red;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+}
+
+button.playInterviewBtn {
+	cursor: pointer;
+	margin: 2px;
+	padding: 1px;
+}
+
+div.buttonsPlayContainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+div.shortcode, span.shortcode {
+	padding: 10px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: monospace;
+	cursor: pointer;
+}
+
+#interviewRecorder, video.interviewPlayer {
+	background: #000;
+	width: 640px;
+	height: 480px;
+	max-width: 100%;
+}
+
+div.interviewContainer {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+div.interviewContainer div.question {
+	font-size: 2em;
+	padding: 10px;
+}
+
+div.answer {
+	margin: 20px;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+
+#interviewInviteContainer > div {
+	margin: 11px;
+	padding: 5px;
+}
+#inviteInterviewSendBtn {
+	cursor: pointer;
+}
+#interviewTable button {
+	cursor: pointer;
+}
+#interviewTable button:hover  span{
+	color:red!important;
+
+}
+#langSelection {
+	float: right;
+	min-height: 20px;
+	height: 30px;
+	font-size: 1em;
+}
